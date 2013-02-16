@@ -8,17 +8,44 @@ block body
         a(href='view1') view1
       li
         a(href='view2') view2
-
+      li
+         a(href='faq') faq
+      li
+         a(href='select2') select2
     div(ng-view)
 
     div
       | Angular Socket.io seed app: v
       span(app-version)
 
-  script(src='js/lib/angular/angular.js')
-  script(src='/socket.io/socket.io.js')
-  script(src='js/app.js')
-  script(src='js/services.js')
-  script(src='js/controllers.js')
-  script(src='js/filters.js')
-  script(src='js/directives.js')
+
+
+    //script(src='js/lib/jquery/jquery.js')
+    //script(src='js/lib/jquery/jquery-migrate-1.1.0.min.js')
+    script(src='js/lib/jquery183/jquery.js')
+    script(src='js/lib//select2.js')
+
+    script(src='js/lib/jquery/jquery-ui.js')
+
+
+
+    //orig
+    script(src='js/lib/angular/angular.js')
+    //script(src='js/lib/angular103/angular.js')
+    script(src='js/lib/angular/angular-ui.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='js/app.js')
+    script(src='js/services.js')
+    script(src='js/controllers.js')
+    script(src='js/filters.js')
+    script(src='js/directives.js')
+    // end orig
+
+    script(src='js/lib/angular/angular-ui.js')
+    script(src='js/lib/angular/ng-grid.debug.js')
+    script(src='js/lib/underscore.js')
+    script(src='js/lib/bootstrap/js/bootstrap.js')
+    script(src='js/lib/angular/bootstrapui.js')
+
+    //script(src='js/plugins/ng-grid-layout.js')
+
