@@ -1,0 +1,12 @@
+p
+    #main-content
+        label.checkbox
+            span(style='color:white;font-weight:bold')
+                input(type='checkbox', ng-model='oneAtATime')
+                | Open only one at a time
+        accordion(close-others='oneAtATime')
+            span(style='color:white;font-weight:bold')
+                accordion-group(heading='Browser Support', is-open='true') Internet Explorer 8 & 9, Chrome, Safari & Firefox are all supported
+                    div(ng-repeat='item in items') {{item}}
+
+                accordion-group(heading='{{group.title}}', is-open='group.isOpen', ng-repeat='group in groups') {{group.content}}

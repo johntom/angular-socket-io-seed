@@ -1,0 +1,34 @@
+/*style.css*/
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: auto;
+    height: 600px;
+}
+
+.explain
+{
+   max-width:  55px;
+    text-wrap: normal;
+}
+
+
+.masdesc
+{
+    width:  550px;
+    text-wrap: normal;
+}
+
+.brmdesc
+{
+    width:  440px;
+    text-wrap: normal;
+}
+
+.frontpage
+{
+    line-height: .5;
+    font-weight: bold;
+
+}
+
+/*.wrap {width:960px;margin:0 auto;}*/

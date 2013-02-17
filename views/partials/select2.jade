@@ -1,0 +1,26 @@
+p
+    #main-content
+
+    p
+        | Value is: {{select2}}
+        a(ng-click='select2=\'two\'') (choose second)
+        select(ui-select2='ui-select2', ng-model='select2', data-placeholder='Pick a number')
+            option(value='')
+            option(value='one') First1
+            option(value='two') Second
+            option(value='three') Third3
+
+         select(ui-select2='{width:\'resolve\'}', name='type', ng-model='value', required='required')
+            option(ng-repeat='t in types') {{t}}
+             pre.
+              \nSelected: {{value}}
+         select.select-select2(ng-model='selectedValue', ng-options='p.id as p.name for p in data')
+
+         select(ng-model='item', ui-select2)
+            option(ng-repeat='i in items', value='{{i.val}}') {{i.name}}
+         select(ng-model='State', ng-options='s for s in usstates', placeholder='state',required,style='width:120px')
+         select(ng-model='usstates', ng-select2='ng:-elect2')
+            option(ng-repeat='s in usstates', value='{{s}}')
+              // {{i.name}}
+
+

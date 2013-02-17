@@ -1,4 +1,19 @@
 p This is the partial for view 2.
+
 p
   | Showing of 'interpolate' filter:
   | {{ 'Current version is v%VERSION%.' | interpolate }}
+p
+
+  a(ng-click='select2=\'two\'') (choose second)
+p
+  select(ui-select2="{allowClear:true}", ng-model='select2', data-placeholder='Pick a number')
+        option(value='')
+        option(value='one') First1
+        option(value='two') Second
+        option(value='three') Third3
+  select(ui-select2='ui-select2', ng-model='select2A', data-placeholder='Pick a number',ng-click="sayhi()")
+          option(value='')
+          option(value='one') First1
+          option(value='two') Second
+          option(value='three') Third3
