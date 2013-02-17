@@ -32,7 +32,12 @@ illustrate using the seed.
     package.json        --> for npm
     public/             --> all of the files to be used in on the client side
       css/              --> css files
-        app.css         --> default stylesheet
+      app.css           --> default stylesheet
+      navagator.css     --> default stylesheet
+      bootstrap-combined.min.css         --> bootstrap v2.3.0
+      angular-ui.css.css-->  stylesheet
+      jquery-ui.css     -->  stylesheet
+      select2.css       -->  stylesheet
       img/              --> image files
       js/               --> javascript files
         app.js          --> declare top-level app module
@@ -41,11 +46,16 @@ illustrate using the seed.
         filters.js      --> custom angular filters
         services.js     --> custom angular services
         lib/            --> angular and 3rd party JavaScript libraries
-          angular/
-            angular.js            --> the latest angular js
+            angular/
+            angular.js            --> the latest angular js 1.0.4
             angular.min.js        --> the latest minified angular js
             angular-*.js          --> angular add-on modules
             version.txt           --> version number
+            angular103/
+            angular.js          --> the latest angular js 1.0.3 i=used for teset
+            /jquery
+            /bootstrap
+        
     routes/
       index.js          --> route for serving HTML pages and partials
     views/
@@ -54,6 +64,8 @@ illustrate using the seed.
       partials/         --> angular view partials (partial jade templates)
         partial1.jade
         partial2.jade
+        faq.jade        --> test of accordion. 
+        select2.jade    --> test of select2
 
 
 
