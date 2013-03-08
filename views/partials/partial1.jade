@@ -1,2 +1,9 @@
 p This is the partial for view 1.
 p The current time is {{time}}
+    .ui-layout-center
+        | Center
+        div(style='position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow: hidden;', ng-grid='gridOptions')
+        .ui-layout-north North
+        .ui-layout-south South
+        .ui-layout-east East
+        .ui-layout-west West
