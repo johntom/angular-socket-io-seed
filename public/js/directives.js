@@ -9,28 +9,26 @@ angular.module('myApp.directives', []).
       elm.text(version);
     };
   }])
-  
-.directive('layout', function() {
-    return {
+    .directive('layout', function() {
+        console.log('in 1 la');
+        return {
 
-        link: function(scope, elm, attrs) {
-            var layout = elm.layout({ applyDefaultStyles: true });
-            console.log('layout ',layout)
-            scope.layout  = layout;
+            link: function(scope, elm, attrs) {
+                var layout = elm.layout({ applyDefaultStyles: true });
 
-            scope.$watch(attrs.state, function(state) {
-                if (state == true) {
-                    scope.layout.sizePane('east', 120);
-                    scope.layout.show('west');
-                    scope.layout.show('south');
-                } else {
-                    scope.layout.sizePane('east', 60);
-                    scope.layout.hide('west');
-                    scope.layout.hide('south');
-                }
-            });
-        }
-    };
-})
-  
-  ;
+                scope.layout  = layout;
+                console.log('in la');
+                scope.$watch(attrs.state, function(state) {
+                    if (state == true) {
+                        scope.layout.sizePane('east', 120);
+                        scope.layout.show('west');
+                        scope.layout.show('south');
+                    } else {
+                        scope.layout.sizePane('east', 60);
+                        scope.layout.hide('west');
+                        scope.layout.hide('south');
+                    }
+                });
+            }
+        };
+    })
