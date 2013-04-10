@@ -1,15 +1,21 @@
 p This is the partial for view 2.
-
 p
   | Showing of 'interpolate' filter:
   | {{ 'Current version is v%VERSION%.' | interpolate }}
 p
+        .ui-layout-north
+        | angular-1.0.5
+        button(ng-click='bodyState = !bodyState') Toggle bodyState
+            | {{bodyState}}
+        .ui-layout-west
+            | West
+        .ui-layout-center
 
-  a(ng-click='select2=\'two\'') (choose second)
-p
-  select(ui-select2="{allowClear:true}", ng-model='select2', data-placeholder='Pick a number')
-        option(value='')
-        option(value='one') First1
-        option(value='two') Second
-        option(value='three') Third3
+            | Center
+        .ui-layout-east
+            | East
+        .ui-layout-south
+            .ui-layout-pane
+             | South
+
  
